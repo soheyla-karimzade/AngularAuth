@@ -9,7 +9,9 @@ import { CustomFormsModule } from 'ng2-validation'
 // Import your library
 import { SampleModule } from 'auth-library';
 
-import {AuthService} from 'auth-library/auth.service'
+// import {MainDirective} from "auth-library";
+
+
 
 
 @NgModule({
@@ -28,7 +30,6 @@ import {AuthService} from 'auth-library/auth.service'
   bootstrap: [AppComponent]
 })
 export class AppModule {
-  constructor( private authService: AuthService) {
-    this.authService.setApiUrl('http://localhost:8000');
+  constructor( ) {
   }
 }
